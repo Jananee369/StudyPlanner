@@ -1,0 +1,170 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header {
+    background-color: palevioletred;
+    background-image: url("book bar.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 28px 25px;
+    border-radius: 10px;
+    margin: 0px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 260px;
+}
+#title {
+   color: black;
+   text-align: left;
+}
+#subtitle {
+    color: black;
+    text-align: left;
+}
+#book-icon {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+#task {
+    background-color: palevioletred;
+    width: 500px;      
+    height: 35px;      
+    padding: 10px;     
+    font-size: 16px;   
+    border-radius: 8px;
+    border: none;
+    size: 25px;
+    cursor: pointer;
+    color: black;
+}
+#date {
+    background-color:palevioletred;
+    width: 500px;      
+    height: 35px;      
+    padding: 10px;     
+    font-size: 16px;   
+    border-radius: 8px;
+    border: none;
+    size: 25px;
+    cursor: pointer;
+    color: black;
+}
+#addbtn {
+    background-color: palevioletred;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 520px;
+    height: 50px;
+    cursor: pointer;
+}
+input::placeholder {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#date::placeholder {
+    color: black;
+}
+#left {
+    padding-left: 20px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  
+#maincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    min-height: 100vh;
+}
+#maincontainer::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: palevioletred;
+    transform: translateX(-50%);
+}
+ul {
+    list-style: none;
+    padding-top: 8px;
+}
+#clearbtn {
+    margin-bottom: 6px;
+    padding-right: 15px;
+    background-color: palevioletred;
+    color: black;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#right { 
+    padding-right: 15px;
+    width: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+li {
+    color: black;
+    background: palevioletred;
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.task-text,
+.task-date {
+    font-size: 14px;
+    color: black;
+}
+.task-remaining {
+    font-size: 12px;
+    color: #222;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+.completed .task-text,
+.completed .task-date,
+.completed .task-remaining {
+    text-decoration: line-through;
+}
+#done, #delete{
+    background-color: black;
+    color: palevioletred;
+    padding-top:10px; 
+    border: 3px black;
+    border-radius: 5px;
+}
